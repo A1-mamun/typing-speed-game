@@ -32,16 +32,92 @@
     </style>
 </head>
 
-<body>
-    <section class="home">
-
-    </section>
-    <section class="play-ground">
-
-    </section>
-    <section class="score">
-
-    </section>
+<body class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+    <main class="">
+        <!-- home screen -->
+        <section id="home-screen" class="">
+            <div class="home min-h-screen flex flex-col justify-center items-center space-y-8">
+                <h1 class="text-9xl font-anton uppercase text-white">Alpha Clash Pro</h1>
+                <p class="font-poppins text-2xl text-white font-medium">Unleash Your Keyboard Kung Fu : Press “Enter” to
+                    Play</p>
+                <button onclick="play()" class="btn bg-white text-[#010313] text-2xl font-poppins font-semibold">Play
+                    Now</button>
+            </div>
+        </section>
+        <!-- playground -->
+        <section id="play-ground" class="play-ground hidden">
+            <div class="flex flex-col gap-10 items-center pt-20">
+                <!-- screen -->
+                <div
+                    class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB2]  font-poppins">
+                    <div class="flex justify-center">
+                        <p class="bg-[#2F2941] px-6 pb-3 rounded-b-xl
+                                    text-lg font-medium text-white">Don't watch keyboard while playing...</p>
+                    </div>
+                    <div class="flex justify-center items-center h-full">
+                        <p id="alphabet" class="text-black text-9xl font-semibold uppercase">Y</p>
+                    </div>
+                </div>
+                <!-- keyboard -->
+                <div class="space-y-2">
+                    <div class="flex justify-center gap-2 my-1 w-full ">
+                        <kbd id="q" class="kbd kbd-lg text-2xl font-medium text-black bg-white">q</kbd>
+                        <kbd id="w" class="kbd kbd-lg text-2xl font-medium text-black bg-white">w</kbd>
+                        <kbd id="e" class="kbd kbd-lg text-2xl font-medium text-black bg-white">e</kbd>
+                        <kbd id="r" class="kbd kbd-lg text-2xl font-medium text-black bg-white">r</kbd>
+                        <kbd id="t" class="kbd kbd-lg text-2xl font-medium text-black bg-white">t</kbd>
+                        <kbd id="y" class="kbd kbd-lg text-2xl font-medium text-black bg-white">y</kbd>
+                        <kbd id="u" class="kbd kbd-lg text-2xl font-medium text-black bg-white">u</kbd>
+                        <kbd id="i" class="kbd kbd-lg text-2xl font-medium text-black bg-white">i</kbd>
+                        <kbd id="o" class="kbd kbd-lg text-2xl font-medium text-black bg-white">o</kbd>
+                        <kbd id="p" class="kbd kbd-lg text-2xl font-medium text-black bg-white">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-2 my-1 w-full">
+                        <kbd id="a" class="kbd kbd-lg text-2xl font-medium text-black bg-white">a</kbd>
+                        <kbd id="s" class="kbd kbd-lg text-2xl font-medium text-black bg-white">s</kbd>
+                        <kbd id="d" class="kbd kbd-lg text-2xl font-medium text-black bg-white">d</kbd>
+                        <kbd id="f" class="kbd kbd-lg text-2xl font-medium text-black bg-white">f</kbd>
+                        <kbd id="g" class="kbd kbd-lg text-2xl font-medium text-black bg-white">g</kbd>
+                        <kbd id="h" class="kbd kbd-lg text-2xl font-medium text-black bg-white">h</kbd>
+                        <kbd id="j" class="kbd kbd-lg text-2xl font-medium text-black bg-white">j</kbd>
+                        <kbd id="k" class="kbd kbd-lg text-2xl font-medium text-black bg-white">k</kbd>
+                        <kbd id="l" class="kbd kbd-lg text-2xl font-medium text-black bg-white">l</kbd>
+                    </div>
+                    <div class="flex justify-center gap-2 my-1 w-full">
+                        <kbd id="z" class="kbd kbd-lg text-2xl font-medium text-black bg-white">z</kbd>
+                        <kbd id="x" class="kbd kbd-lg text-2xl font-medium text-black bg-white">x</kbd>
+                        <kbd id="c" class="kbd kbd-lg text-2xl font-medium text-black bg-white">c</kbd>
+                        <kbd id="v" class="kbd kbd-lg text-2xl font-medium text-black bg-white">v</kbd>
+                        <kbd id="b" class="kbd kbd-lg text-2xl font-medium text-black bg-white">b</kbd>
+                        <kbd id="n" class="kbd kbd-lg text-2xl font-medium text-black bg-white">n</kbd>
+                        <kbd id="m" class="kbd kbd-lg text-2xl font-medium text-black bg-white">m</kbd>
+                        <kbd id="/" class="kbd kbd-lg text-2xl font-medium text-black bg-white">/</kbd>
+                    </div>
+                </div>
+                <!-- lifeline and score -->
+                <div class="flex justify-around w-11/12">
+                    <button class="btn rounded-full bg-[#894189] text-white px-5 font-inter text-xl font-medium">Life
+                        <img src="images/Group 23.svg" alt=""><span id="life">0</span>
+                    </button>
+                    <button class="btn rounded-full bg-[#360490] text-white px-5 font-inter text-xl font-medium">Score
+                        <img src="images/monetization_on.svg" alt=""><span id="life">0</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- score section -->
+        <section id="score" class="score hidden">
+            <div class="font-poppins text-white min-h-screen flex justify-center items-center ">
+                <div class="bg-gradient-to-br from-[#FFFFFF8F] to-[#98979700] space-y-6  text-center p-12 rounded-2xl">
+                    <h1 class="text-7xl font-extrabold ">Score : <span>00</span></h1>
+                    <button class="btn text-black bg-white text-2xl font-semibold">Play Again</button>
+                    <p class="text-xl font-medium">Practice will make you Pro</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/typing-speed.js"></script>
 </body>
 
 </html>
