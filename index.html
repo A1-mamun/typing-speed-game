@@ -97,20 +97,20 @@
                 <!-- lifeline and score -->
                 <div class="flex justify-around w-11/12">
                     <button class="btn rounded-full bg-[#894189] text-white px-5 font-inter text-xl font-medium">Life
-                        <img src="images/Group 23.svg" alt=""><span id="life">0</span>
+                        <img src="images/Group 23.svg" alt=""><span id="life">5</span>
                     </button>
                     <button class="btn rounded-full bg-[#360490] text-white px-5 font-inter text-xl font-medium">Score
-                        <img src="images/monetization_on.svg" alt=""><span id="life">0</span>
+                        <img src="images/monetization_on.svg" alt=""><span id="score">0</span>
                     </button>
                 </div>
             </div>
         </section>
         <!-- score section -->
-        <section id="score" class="score hidden">
+        <section id="final-score" class="hidden">
             <div class="font-poppins text-white min-h-screen flex justify-center items-center ">
                 <div class="bg-gradient-to-br from-[#FFFFFF8F] to-[#98979700] space-y-6  text-center p-12 rounded-2xl">
-                    <h1 class="text-7xl font-extrabold ">Score : <span>00</span></h1>
-                    <button class="btn text-black bg-white text-2xl font-semibold">Play Again</button>
+                    <h1 class="text-7xl font-extrabold ">Score : <span id="final-point">00</span></h1>
+                    <button onclick="play()" class="btn text-black bg-white text-2xl font-semibold">Play Again</button>
                     <p class="text-xl font-medium">Practice will make you Pro</p>
                 </div>
             </div>
